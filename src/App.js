@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-
+import Component1 from "./components/Component1";
 export default class App extends Component {
   //name = "Rhytonne";
   render() {
@@ -13,6 +13,7 @@ export default class App extends Component {
       <div>
         <div style={style}>Style</div>
         <button id="hover">Click me</button>
+        <Component1 />
       </div>
     );
   }
