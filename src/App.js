@@ -13,7 +13,7 @@ export default class App extends Component {
       <div>
         <div style={style}>Style</div>
         <button id="hover">Click me</button>
-        <Component1 />
+        <Component1 name="rhytonne" age="25" />
       </div>
     );
   }
