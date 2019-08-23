@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./App.css";
 import Component1 from "./components/Component1";
+import Component2 from "./components/Component2";
+
 export default class App extends Component {
   //name = "Rhytonne";
   render() {
@@ -14,6 +16,7 @@ export default class App extends Component {
         <div style={style}>Style</div>
         <button id="hover">Click me</button>
         <Component1 name="rhytonne" age="25" />
+        <Component2 />
       </div>
     );
   }
