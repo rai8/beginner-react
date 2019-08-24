@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Component1 from "./components/Component1";
 import Component2 from "./components/Component2";
+import Component3 from "./components/Component3";
 
 export default class App extends Component {
   //name = "Rhytonne";
@@ -17,6 +18,8 @@ export default class App extends Component {
         <button id="hover">Click me</button>
         <Component1 name="rhytonne" age="25" />
         <Component2 />
+        <br />
+        <Component3 />
       </div>
     );
   }
