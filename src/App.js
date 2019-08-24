@@ -3,6 +3,7 @@ import "./App.css";
 import Component1 from "./components/Component1";
 import Component2 from "./components/Component2";
 import Component3 from "./components/Component3";
+import Component4 from "./components/Component4";
 
 export default class App extends Component {
   //name = "Rhytonne";
@@ -20,6 +21,8 @@ export default class App extends Component {
         <Component2 />
         <br />
         <Component3 />
+        <br />
+        <Component4 />
       </div>
     );
   }
