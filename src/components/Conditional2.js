@@ -1,10 +1,21 @@
 import React from "react";
 
 export default function Conditional2(props) {
-  if (props.isLoading === true) {
+  return (
+    <div>
+      {props.isLoading === true ? (
+        <h1>Loading in progress.... kindly wait</h1>
+      ) : (
+        <h1>Loading finished, that was some really cool stuff</h1>
+      )}
+    </div>
+  );
+}
+
+/*if (props.isLoading === true) {
     return (
       <div>
-        <h1>Loading .... kinldy wait</h1>
+        <h1>Loading .... kindly wait</h1>
       </div>
     );
   }
@@ -12,5 +23,4 @@ export default function Conditional2(props) {
     <div>
       <h1>Loading is done, this was some reeally cool stuff </h1>
     </div>
-  );
-}
+  ); */
