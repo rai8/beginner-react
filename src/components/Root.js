@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Ninjas from "./Ninjas";
+import AddNinja from "./AdddNinja";
 
 class Root extends Component {
   state = {
@@ -16,6 +17,7 @@ class Root extends Component {
           <u>Rendering list in states</u>
         </h1>
         <Ninjas ninjas={this.state.ninjas} key={this.state.ninjas.id} />
+        <AddNinja />
       </React.Fragment>
     );
   }
