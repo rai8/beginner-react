@@ -5,11 +5,11 @@ class Ninjas extends Component {
     const { ninjas } = this.props; //object destructuring
     const ninjaList = ninjas.map(ninja => {
       return (
-        <React.Fragment>
+        <div key={ninja.id}>
           <p>Name: {ninja.name} </p>
           <p>Age: {ninja.age}</p>
           <p>Belt: {ninja.belt}</p>
-        </React.Fragment>
+        </div>
       );
     });
     return <React.Fragment>{ninjaList}</React.Fragment>;

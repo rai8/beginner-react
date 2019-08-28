@@ -10,6 +10,14 @@ class Root extends Component {
       { id: 3, name: "Trexy", age: 22, belt: "white" }
     ]
   };
+  addNinja = ninja => {
+    ninja.id = Math.random();
+    let ninjas = [...this.state.ninjas, ninja];
+    this.setState({
+      ninjas: ninjas
+    });
+  };
+
   render() {
     return (
       <React.Fragment>
@@ -17,7 +25,7 @@ class Root extends Component {
           <u>Rendering list in states</u>
         </h1>
         <Ninjas ninjas={this.state.ninjas} key={this.state.ninjas.id} />
-        <AddNinja />
+        <AddNinja addNinja={this.addNinja} />
       </React.Fragment>
     );
   }
