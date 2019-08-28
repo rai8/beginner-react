@@ -18,13 +18,24 @@ class Root extends Component {
     });
   };
 
+  deleteNinja = id => {
+    let ninjas = this.state.ninjas.filter(ninja => {
+      return ninja.id !== id;
+    });
+    this.setState({ ninjas: ninjas });
+  };
+
   render() {
     return (
       <React.Fragment>
         <h1>
           <u>Rendering list in states</u>
         </h1>
-        <Ninjas ninjas={this.state.ninjas} key={this.state.ninjas.id} />
+        <Ninjas
+          deleteNinja={this.deleteNinja}
+          ninjas={this.state.ninjas}
+          key={this.state.ninjas.id}
+        />
         <AddNinja addNinja={this.addNinja} />
       </React.Fragment>
     );
